@@ -1,0 +1,132 @@
+.sidebar {
+  background-color: #181818;
+  height: 100vh;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.button button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.button button span {
+  font-size: large;
+}
+
+.history {
+  margin: 10px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.history li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: no-wrap;
+  max-width: 100%;
+}
+
+.highlighted {
+  background-color: #242424;
+}
+
+.history li:hover {
+  background-color: #303030;
+}
+
+.history li span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sign {
+  padding: 20px;
+  font-size: 1rem;
+  border-top: solid 1px #323232;
+}
+
+.fa-trash {
+  opacity: 0;
+}
+
+.history li:hover .fa-trash {
+  opacity: 1;
+  color: #fff;
+}
+
+.history li .fa-trash:hover {
+  color: #f74545;
+}
+
+/* Sidebar Scrollbar Styles */
+
+.history::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.history::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.history::-webkit-scrollbar-thumb {
+  background: #383838;
+  border-radius: 0.8rem;
+}
+
+.history:hover::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+}
+
+.history::-webkit-scrollbar-thumb:hover {
+  background: #c0c0c1;
+}
+
+.history::-webkit-scrollbar-button {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: transparent;
+}
+
+.history::-webkit-scrollbar-button:single-button:decrement {
+  border-width: 0 0.25rem 0.25rem 0.25rem;
+  border-style: solid;
+  border-color: transparent transparent #383838 transparent;
+}
+
+.history:hover::-webkit-scrollbar-button:single-button:decrement {
+  border-color: transparent transparent #4d4d4d transparent;
+}
+
+.history::-webkit-scrollbar-button:single-button:increment {
+  border-width: 0.25rem 0.25rem 0 0.25rem;
+  border-style: solid;
+  border-color: #383838 transparent transparent transparent;
+}
+
+.history:hover::-webkit-scrollbar-button:single-button:increment {
+  border-color: #4d4d4d transparent transparent transparent;
+}

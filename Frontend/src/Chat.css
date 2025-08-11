@@ -1,0 +1,148 @@
+.chat {
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.chats {
+  width: 70%;
+}
+
+.userDiv {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.userMessage {
+  background-color: #303030;
+  padding: 0.8rem;
+  border-radius: 0.9rem;
+  max-width: 70%;
+  text-align: start;
+  width: fit-content;
+}
+
+.gptDiv {
+  text-align: left;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+
+.reactMarkdown,
+.reactMarkdown * {
+  all: revert; /* resets everything to browser/user defaults */
+}
+
+.hljs {
+  border-radius: 0.4rem;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+/* Chat Scrollbar Styles */
+
+.chat::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.chat::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat::-webkit-scrollbar-thumb {
+  background: #383838;
+  border-radius: 1rem;
+}
+
+.chat:hover::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+}
+
+.chat::-webkit-scrollbar-thumb:hover {
+  background: #c0c0c1;
+}
+
+.chat::-webkit-scrollbar-button {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: transparent;
+}
+
+.chat::-webkit-scrollbar-button:single-button:decrement {
+  border-width: 0 0.25rem 0.25rem 0.25rem;
+  border-style: solid;
+  border-color: transparent transparent #383838 transparent;
+}
+
+.chat:hover::-webkit-scrollbar-button:single-button:decrement {
+  border-color: transparent transparent #4d4d4d transparent;
+}
+
+.chat::-webkit-scrollbar-button:single-button:increment {
+  border-width: 0.25rem 0.25rem 0 0.25rem;
+  border-style: solid;
+  border-color: #383838 transparent transparent transparent;
+}
+
+.chat:hover::-webkit-scrollbar-button:single-button:increment {
+  border-color: #4d4d4d transparent transparent transparent;
+}
+
+/* Code Scrollbar Styles */
+
+code::-webkit-scrollbar {
+  height: 8px;
+}
+
+code::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+code::-webkit-scrollbar-thumb {
+  background: #383838;
+  border-radius: 1rem;
+}
+
+code:hover::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+}
+
+code::-webkit-scrollbar-thumb:hover {
+  background: #c0c0c1;
+}
+
+code::-webkit-scrollbar-button {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: transparent;
+}
+
+code::-webkit-scrollbar-button:single-button:decrement {
+  border-width: 0.25rem 0.25rem 0.25rem 0;
+  border-style: solid;
+  border-color: transparent #383838 transparent transparent;
+}
+
+code:hover::-webkit-scrollbar-button:single-button:decrement {
+  border-width: 0.25rem 0.25rem 0.25rem 0;
+  border-style: solid;
+  border-color: transparent #4d4d4d transparent transparent;
+}
+
+code::-webkit-scrollbar-button:single-button:increment {
+  border-width: 0.25rem 0 0.25rem 0.25rem;
+  border-style: solid;
+  border-color: transparent transparent transparent#383838;
+}
+
+code:hover::-webkit-scrollbar-button:single-button:increment {
+  border-width: 0.25rem 0 0.25rem 0.25rem;
+  border-style: solid;
+  border-color: transparent transparent transparent#4d4d4d;
+}

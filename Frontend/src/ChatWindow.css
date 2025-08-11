@@ -1,0 +1,171 @@
+.chatWindow {
+  background-color: #212121;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar div {
+  margin: 1rem;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.name:hover {
+  background-color: #424242;
+}
+
+.userIcon {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.userIcon:hover {
+  background-color: #424242;
+}
+
+.bottom {
+  width: 70%;
+}
+
+.chatInput {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBox {
+  width: 100%;
+  height: 7rem;
+  background-color: #303030;
+  padding: 0.5rem 1.2rem 0.5rem 0.5rem;
+  position: relative;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px 1px,
+    rgba(0, 0, 0, 0.5) -1px -1px 10px 1px;
+}
+
+textarea {
+  width: 100%;
+  height: 70%;
+  resize: none;
+  border: none;
+  background-color: #303030;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #454545;
+  border-radius: 0.4rem;
+}
+
+textarea:hover::-webkit-scrollbar-thumb {
+  background-color: #595959;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #c0c0c1;
+}
+
+textarea::-webkit-scrollbar-button {
+  width: 0.4rem;
+  height: 0.9rem;
+  background: transparent;
+}
+
+textarea::-webkit-scrollbar-button:single-button:decrement {
+  border-width: 0 0.2rem 0.2rem 0.2rem;
+  border-style: solid;
+  border-color: transparent transparent #454545 transparent;
+}
+
+textarea:hover::-webkit-scrollbar-button:single-button:decrement {
+  border-width: 0 0.2rem 0.2rem 0.2rem;
+  border-style: solid;
+  border-color: transparent transparent #595959 transparent;
+}
+
+textarea::-webkit-scrollbar-button:single-button:increment {
+  border-width: 0.2rem 0.2rem 0 0.2rem;
+  border-style: solid;
+  border-color: #454545 transparent transparent transparent;
+}
+
+textarea:hover::-webkit-scrollbar-button:single-button:increment {
+  border-width: 0.2rem 0.2rem 0 0.2rem;
+  border-style: solid;
+  border-color: #595959 transparent transparent transparent;
+}
+
+#submit {
+  cursor: pointer;
+  color: black;
+  height: 35px;
+  width: 35px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.info {
+  font-size: 0.8rem;
+  color: #d0d0d0;
+  margin: 0.5rem;
+  margin-top: 20px;
+}
+
+.beatLoader {
+  position: relative;
+  bottom: 2rem;
+  z-index: 1;
+}
