@@ -84,7 +84,10 @@ router.post("/chat", async (req, res) => {
     }
 
     const assistantReply = await getOpenAIAPIResponse(message);
-    thread.messages.push({ role: "assistant", content: assistantReply });
+    thread.messages.push({
+      role: "assistant",
+      content: assistantReply || "Failed to generate response",
+    });
     thread.updatedAt = new Date();
 
     await thread.save();

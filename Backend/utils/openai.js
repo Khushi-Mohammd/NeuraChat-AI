@@ -21,13 +21,30 @@ const getOpenAIAPIResponse = async (message) => {
   try {
     const response = await fetch(
       "https://api.openai.com/v1/chat/completions",
-      options
+      options,
     );
+
     const data = await response.json();
-    console.log(data.choices[0].message.content);
+
+    // DEBUG LOG
+    console.log("OPENAI RESPONSE:", JSON.stringify(data, null, 2));
+
+    // HANDLE API ERRORS
+    if (data.error) {
+      console.log("OPENAI API ERROR:", data.error.message);
+      return "OpenAI API Error";
+    }
+
+    // HANDLE EMPTY RESPONSES
+    if (!data.choices || data.choices.length === 0) {
+      console.log("No choices returned");
+      return "No response generated";
+    }
+
     return data.choices[0].message.content;
   } catch (error) {
-    console.log(error);
+    console.log("FETCH ERROR:", error);
+    return "Server Error";
   }
 };
 
